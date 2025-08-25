@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Payoo Home</title>
     <!-- daisyui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <!-- tailwind -->
@@ -33,27 +33,27 @@
    </div>
 
    <div class="grid grid-cols-3  gap-4 p-3">
-    <div id="add-button" class="border-2 border-gray-300 text-center p-3 rounded-xl">
+    <div id="add-button" class="form-btn border-2 border-gray-300 text-center p-3 rounded-xl">
         <img src="./assets/wallet1.png" alt="" class="mx-auto">
         <h2>Add money</h2>
     </div>
-    <div id="cash-out-button" class="border-2 border-gray-300 text-center p-3 rounded-xl">
+    <div id="cash-out-button" class="form-btn border-2 border-gray-300 text-center p-3 rounded-xl">
         <img src="./assets/send1.png" alt="" class="mx-auto">
         <h2>Cashout</h2>
     </div>
-    <div class="border-2 border-gray-300 text-center p-3 rounded-xl">
+    <div id="Transfer-button" class="form-btn border-2 border-gray-300 text-center p-3 rounded-xl">
         <img src="./assets/money1.png" alt="" class="mx-auto">
         <h2>Transfer money</h2>
     </div>
-    <div class="border-2 border-gray-300 text-center p-3 rounded-xl">
+    <div id="get-bonus-button" class="form-btn border-2 border-gray-300 text-center p-3 rounded-xl">
         <img src="./assets/bonus1.png" alt="" class="mx-auto">
         <h2>Get Bonus</h2>
     </div>
-    <div class="border-2 border-gray-300 text-center p-3 rounded-xl">
+    <div id="bill-button" class=" form-btn  border-2 border-gray-300 text-center p-3 rounded-xl">
         <img src="./assets/purse1.png" alt="" class="mx-auto">
         <h2>Pay Bill</h2>
     </div>
-    <div class="border-2 border-gray-300 text-center p-3 rounded-xl">
+    <div id="transaction-button" class="form-btn  border-2 border-gray-300 text-center p-3 rounded-xl">
         <img src="./assets/transaction1.png" alt="" class="mx-auto">
         <h2>Transactions</h2>
     </div>
@@ -61,7 +61,7 @@
     </div>
 <div class="all-form-sections max-w-lg mx-auto">
     <!-- add money -->
-     <div id="add-money-parent" >
+     <div class="form" id="add-money-parent" >
         <h1 class="my-5 font-bold">Add Money </h1>
         <form action="" class="bg-white rounded-2xl p-8 ">
             <div class="mb-3">
@@ -88,7 +88,7 @@
         
      </div>
     <!-- cashout -->
-    <div id="cash-out-parent " style="display: none;">
+    <div class="form" id="cash-out-parent " style="display: none;">
         <h1 class="my-5 font-bold">Cashout </h1>
         <form action="" class="bg-white rounded-2xl p-8 ">
             
@@ -105,6 +105,28 @@
             <button class="btn text-white bg-[#0874F2] mt-5 w-full rounded-3xl" id="withdraw-btn" >Withdraw Money</button>
     </form>
     </div>
+    <!-- transfer money -->
+     <div class="form" id="transfer-money-parent" style="display: none;">
+        <h1 class="my-5 font-bold">Transfer Money </h1>
+     </div>
+     <!-- get bonus -->
+     <div class="form" id="get-bonus-parent" style="display: none;">
+        <h1 class="my-5 font-bold">Get Bonus </h1>
+     </div>
+     <!--pay bill -->
+     <div class="form" id="bill-parent" style="display: none;">
+        <h1 class="my-5 font-bold">Pay Bill</h1>
+     </div>
+     <!-- transaction -->
+     <div class="form" id="transaction-parent" style="display: none;">
+        <div class="flex justify-between items-center">
+            <h1 class="my-5 font-bold">Transaction History</h1>
+            <p class="text-[#08080880]">View All</p>
+        </div>
+      <div id="transaction-container">
+        
+      </div>
+     </div>
 </div>
 
 
