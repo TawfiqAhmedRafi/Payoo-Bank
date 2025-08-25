@@ -1,7 +1,11 @@
 const validpin=1234
 const transactionData=[]
 
-
+//logout
+document.getElementById("logoutbutton").addEventListener("click",function(e){
+  e.preventDefault()
+  window.location.href="./index.html"
+})
 
 // functions to get input values
 function getInputValue(id){
